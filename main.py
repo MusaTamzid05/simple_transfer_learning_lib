@@ -46,6 +46,7 @@ def train():
 
     cls = Classifier(input_shape = input_shape)
     cls.fit(X, y, epochs = 8)
+    cls.save(data_preparer.labels)
 
 if __name__ == "__main__":
     run_video()
