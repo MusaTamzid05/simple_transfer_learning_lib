@@ -32,6 +32,7 @@ class ImageAugmentar:
         i = len(os.listdir(save_dir_path))
         save_path = os.path.join(save_dir_path, f"{i}.jpg")
         image.save(save_path)
+        print(f"{save_path} saved")
 
 
 

@@ -1,9 +1,8 @@
-from lib.image_augmentar import ImageAugmentar
-
+from lib.processor import Processor
 
 def main():
-    image_aug = ImageAugmentar(image_path = "avatar.jpg")
-    image_aug.generate("test1")
+    processor = Processor(src_dir = "data/close")
+    processor.run(save_dir_path = "close", num = 100)
 
 
 
