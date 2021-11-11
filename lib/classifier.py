@@ -26,5 +26,9 @@ class Classifier:
         model.summary()
 
 
+    def fit(self, X, y,  epochs = 50, batch_size = 10):
+        self.model.fit(X, y, epochs = epochs, batch_size = batch_size)
+
+
 
 
